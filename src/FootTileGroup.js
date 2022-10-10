@@ -2,16 +2,14 @@ import FootTile from './FootTile';
 import Masonry from 'react-masonry-css'
 
 const breakpointColumnsObj = {
-  default: 4,
-  1100: 3,
-  700: 2,
-  500: 1
+  default: 5,
+  1400: 1
 };
 
-function FootTileGroup({data, setSelectedItem}) {
+function FootTileGroup({data, setselectedTile}) {
 
     var data_array = data.map(function(item){
-      return <FootTile key={item.key} data={item} setSelectedItem={setSelectedItem}/>
+      return <FootTile key={item.key} data={item} setselectedTile={setselectedTile}/>
     })
 
     return (

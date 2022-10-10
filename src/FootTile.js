@@ -1,6 +1,6 @@
 import Tag from './Tag';
 
-function FootTile({data, setSelectedItem}) {
+function FootTile({data, setselectedTile}) {
    
     var tags = data.tags.map(function(item, index){
       return <Tag key={index} data={item}/>
@@ -12,9 +12,12 @@ function FootTile({data, setSelectedItem}) {
           <div className='tags-box'>
             {tags}
           </div>
-          <h6 className="card-title">{data.user}</h6>
+          <div className='tiles-meta'>
+            <h6>Partagé par {data.user}</h6>
+            <h6>{data.date}</h6>
+          </div>
           <p className="card-text">{data.text}</p>
-          <button type="button" className="btn btn-danger" onClick={() => setSelectedItem(data)}>Analyse moi!</button>
+          <button type="button" className="btn btn-danger" onClick={() => setselectedTile(data)}>Analyse moi!</button>
         </div>
       </div>
       
