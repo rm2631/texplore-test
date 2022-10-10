@@ -45,7 +45,8 @@ html, body {
 
 .tags-entities {
   border-radius: 5px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
+  color: black!important;
   border: 1px solid black;
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
@@ -65,4 +66,8 @@ h6 {
 .tiles-meta {
     display: flex;
     justify-content: space-between;
+}
+
+.button-padding {
+  margin-top: 1rem;
 }

@@ -1,4 +1,5 @@
 import Tag from './Tag';
+import Tile from './Tile';
 
 function FootTile({data, setselectedTile}) {
    
@@ -9,15 +10,8 @@ function FootTile({data, setselectedTile}) {
     return (
       <div className="card m-2">
         <div className="card-body">
-          <div className='tags-box'>
-            {tags}
-          </div>
-          <div className='tiles-meta'>
-            <h6>Partagé par {data.user}</h6>
-            <h6>{data.date}</h6>
-          </div>
-          <p className="card-text">{data.text}</p>
-          <button type="button" className="btn btn-danger" onClick={() => setselectedTile(data)}>Analyse moi!</button>
+          <Tile data={data}/>
+          <button type="button" className="btn btn-danger button-padding" onClick={() => setselectedTile(data)}>Analyse moi!</button>
         </div>
       </div>
       
