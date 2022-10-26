@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/f427080b-7e74-48a4-8e17-963136d69f1e/AppServices/subscriptions/f427080b-7e74-48a4-8e17-963136d69f1e/resourceGroups/texplore-hub/providers/Microsoft.Web/sites/texplore-hub-front",
+    "appService.deploySubpath": "."
+}
